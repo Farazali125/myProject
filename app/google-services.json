@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "794085889206",
+    "project_id": "quiz-by-fa",
+    "storage_bucket": "quiz-by-fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794085889206:android:ce257a324425770b274217",
+        "android_client_info": {
+          "package_name": "com.example.spellequizbyfa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794085889206-7nm359odfss131r5e6qc3j3reoic7168.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1xe_vcn2wtaT4zZpJSwxdafYAUmsHa7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794085889206-7nm359odfss131r5e6qc3j3reoic7168.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
