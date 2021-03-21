@@ -48,4 +48,10 @@ public class ResultActivity extends AppCompatActivity {
 
 
     }
+
+    public void Restart(View view) {
+        Intent intent = new Intent(ResultActivity.this, MainActivity.class);
+        startActivity(intent);
+
+    }
 }

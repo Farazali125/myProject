@@ -42,7 +42,7 @@ public class QuizActivity extends AppCompatActivity {
         final String catId = getIntent().getStringExtra("catId");
 
         Random random = new Random();
-        final int rand = random.nextInt(12);
+        final int rand = random.nextInt(7);
 
         database.collection("categories")
                 .document(catId)
