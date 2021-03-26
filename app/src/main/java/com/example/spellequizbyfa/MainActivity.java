@@ -1,10 +1,10 @@
 package com.example.spellequizbyfa;
 
+import android.os.Bundle;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-
-import android.os.Bundle;
 
 import com.example.spellequizbyfa.databinding.ActivityMainBinding;
 import com.google.firebase.firestore.DocumentSnapshot;

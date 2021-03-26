@@ -143,7 +143,8 @@ public class QuizActivity extends AppCompatActivity {
         binding.option4.setBackground(getResources().getDrawable(R.drawable.option_unselected));
     }
 
-    public void onClick(View view) {
+    public void nextBtn(View view) {
+
         switch (view.getId()){
             case R.id.option_1:
             case R.id.option_2:
@@ -169,6 +170,13 @@ public class QuizActivity extends AppCompatActivity {
                 }
                 break;
         }
+
     }
+
+    public void quitBtn(View view) {
+        Intent intent = new Intent(QuizActivity.this,MainActivity.class);
+        startActivity(intent);
+    }
+
 
 }
