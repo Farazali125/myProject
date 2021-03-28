@@ -114,7 +114,7 @@ public class QuizActivity extends AppCompatActivity {
             timer.cancel();
 
         timer.start();
-        if(index < questions.size()) {
+        if(index < 5) {
             binding.questionCounter.setText(String.format("%d/%d", (index+1), questions.size()));
             question = questions.get(index);
             binding.question.setText(question.getQuestion());
@@ -122,6 +122,7 @@ public class QuizActivity extends AppCompatActivity {
             binding.option2.setText(question.getOption2());
             binding.option3.setText(question.getOption3());
             binding.option4.setText(question.getOption4());
+            index++;
         }
     }
 
@@ -158,8 +159,8 @@ public class QuizActivity extends AppCompatActivity {
                 break;
             case R.id.nextBtn:
                 reset();
-                if(index <= questions.size()) {
-                    index++;
+                if(index < 5) {
+                   // index++;
                     setNextQuestion();
                 } else {
                     Intent intent = new Intent(QuizActivity.this, ResultActivity.class);
