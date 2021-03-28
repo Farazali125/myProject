@@ -46,7 +46,7 @@ public class QuizActivity extends AppCompatActivity {
 
         database.collection("categories")
                 .document(catId)
-                .collection("questions")
+                .collection("question")
                 .whereGreaterThanOrEqualTo("index", rand)
                 .orderBy("index")
                 .limit(5).get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
@@ -55,7 +55,7 @@ public class QuizActivity extends AppCompatActivity {
                 if(queryDocumentSnapshots.getDocuments().size() < 5) {
                     database.collection("categories")
                             .document(catId)
-                            .collection("questions")
+                            .collection("question")
                             .whereLessThanOrEqualTo("index", rand)
                             .orderBy("index")
                             .limit(5).get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
@@ -177,6 +177,7 @@ public class QuizActivity extends AppCompatActivity {
         Intent intent = new Intent(QuizActivity.this,MainActivity.class);
         startActivity(intent);
     }
+
 
 
 }

@@ -88,7 +88,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/option_unselected"
 
-        android:onClick="onClick"
+        android:onClick="nextBtn"
         android:padding="15dp"
         android:text="Lion"
         app:layout_constraintEnd_toEndOf="@+id/view5"
@@ -103,7 +103,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/option_unselected"
 
-        android:onClick="onClick"
+        android:onClick="nextBtn"
         android:padding="15dp"
         android:text="Leopard"
         app:layout_constraintEnd_toEndOf="@+id/option_1"
@@ -117,7 +117,7 @@
         android:layout_marginTop="10dp"
 
         android:background="@drawable/option_unselected"
-        android:onClick="onClick"
+        android:onClick="nextBtn"
         android:padding="15dp"
         android:text="Jaguar"
         app:layout_constraintEnd_toEndOf="@+id/option_2"
@@ -131,7 +131,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/option_unselected"
 
-        android:onClick="onClick"
+        android:onClick="nextBtn"
         android:padding="15dp"
         android:text="Cougar"
         app:layout_constraintEnd_toEndOf="@+id/option_3"
